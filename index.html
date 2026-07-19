@@ -1,4 +1,12 @@
-<!DOCTYPE html>\n<html lang="ru">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>Мой список желаний</title>\n</head>\n<body style="margin:0">\n<!-- WISHLIST -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мой список желаний</title>
+</head>
+<body style="margin:0">
+<!-- WISHLIST -->
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600;700&display=swap');
   :root{
@@ -81,6 +89,7 @@
   .wl-pass{
     width:100%; display:flex; gap:8px; align-items:center; margin-top:8px;
   }
+  .wl-pass[hidden]{display:none}
   .wl-pass-inp{
     border:1.5px solid var(--line); border-radius:999px; padding:9px 16px;
     font:inherit; font-size:14px; background:#fff; width:170px; letter-spacing:.2em;
@@ -606,4 +615,6 @@ document.querySelector('.wl-title').addEventListener('click', function(){
 refresh(true);
 setInterval(()=>{ if(selected.size===0) refresh(true); }, 20000);
 </script>
-\n</body>\n</html>
+
+</body>
+</html>
